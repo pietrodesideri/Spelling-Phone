@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id        ="com.professions.app" 
+        version   ="1.0.0" 
+        xmlns     ="http://www.w3.org/ns/widgets"
+ 		xmlns:gap ="https://phonegap.com/ns/1.0"
+		versioncode ="2">
+		
+	<name>123 spelling phone</name>
+
+	<description>
+	  kids phone that displays spellings to clicked images
+
+	  </description>
+
+	<author href="http://facebook.com/kemiowoyele" email="kemiowoyele@gmail.com">
+	  KEMI OWOYELE
+	</author>
+	
+	     <icon src="icon.png"/>
+	
+
+	<!--<splash src="splash.png" platform="android" width="100%" height="100%"> -->
+
+	<!-- <preference name="Vibe Music Player" value="cli-6.0.0"> -->
+</widget>

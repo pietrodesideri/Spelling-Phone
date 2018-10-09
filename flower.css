@@ -1,0 +1,285 @@
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; }
+body { margin: 0; padding: 0;
+background-color: cyan;
+ background-image: url("../stock/star.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+button {
+  min-width: 50%;
+  background: deeppink;
+  font-size: 3em;
+  padding: 5px;
+  display: block;
+  margin: auto;
+   margin-top: 10px;
+   border-right: 7px solid violet;
+   border-left: 7px solid violet;
+  border-top: 7px solid pink;
+   border-bottom: 7px solid pink;
+  /* background-image: url("../stock/grass.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+*/}
+button a {
+  text-decoration: none;
+  color:cyan;
+
+}
+.fy-container, .fr-container {
+    position: relative;
+    margin: 16px auto;
+    width: 320px;
+    height: 320px;
+    border: 1px solid #8600C3;
+}
+.fr-container { /* some other styles */ }
+.fy, .fn {
+    position: absolute;
+    top: 0;
+    left: 37.5%;
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(red, white);
+    transition: transform 1s;
+}
+.fn {
+    height: 50%;
+    transform-origin: 50% 100%;
+    background: radial-gradient(#FF6500, white);
+}
+
+.fy:hover, .fr:hover { transform: rotateZ(360deg); }
+
+.fy-2, .fr-2 { transform: rotateZ(30deg); }
+.fy-3, .fr-3 { transform: rotateZ(60deg); }
+.fy-4, .fr-4 { transform: rotateZ(90deg); }
+.fy-5, .fr-5 { transform: rotateZ(120deg); }
+.fy-6, .fr-6 { transform: rotateZ(150deg); }
+
+.fr-7 { transform: rotateZ(180deg); }
+.fr-8 { transform: rotateZ(210deg); }
+.fr-9 { transform: rotateZ(240deg); }
+.fr-10 { transform: rotateZ(270deg); }
+.fr-11 { transform: rotateZ(300deg); }
+.fr-12 { transform: rotateZ(330deg); }
+
+.fn-container {
+    position: relative;
+    margin: 16px auto;
+    width: 320px;
+    height: 320px;
+    }
+/*.fn {
+    position: absolute;
+    top: 12.5%;
+    left: 25%;
+    width: 25%;
+    height: 37.5%;
+    transform-origin: 100% 100%;
+    border: 1px solid gray;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    background: radial-gradient(#8600C3, white);
+    transition: transform 1s;
+}*/
+/* .fn-2 {
+     background-image: url(../animal/wolf.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-3 {
+     background-image: url(../animal/armadillo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-4 {
+     background-image: url(../animal/bat.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-5 {
+     background-image: url(../animal/bear.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-6 {
+     background-image: url(../animal/cat.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-7 {
+     background-image: url(../animal/chicken.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-8 {
+     background-image: url(../animal/dog.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-9 {
+     background-image: url(../animal/dolphine.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-10 {
+     background-image: url(../animal/eagle.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-11 {
+     background-image: url(../animal/elephant.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-12 {
+     background-image: url(../animal/frog.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-13 {
+     background-image: url(../animal/clownfish.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-14 {
+     background-image: url(../animal/giraffe.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-15 {
+     background-image: url(../animal/goat.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-16 {
+     background-image: url(../animal/horse.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+
+ .fn-17 {
+     background-image: url(../animal/ibex.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-18 {
+     background-image: url(../animal/iguana.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-19 {
+     background-image: url(../animal/puma.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-20 {
+     background-image: url(../animal/lion.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-21 {
+     background-image: url(../animal/jellyfish.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-22 {
+     background-image: url(../animal/parrot.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-23 {
+     background-image: url(../animal/zebra.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ }
+ .fn-24 {
+     background-image: url(../animal/ant.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ } */
+
+.fn:hover { transform: rotateZ(360deg); }
+
+.fn-2 { transform: rotateZ(15deg); }
+.fn-3 { transform: rotateZ(30deg); }
+.fn-4 { transform: rotateZ(45deg); }
+.fn-5 { transform: rotateZ(60deg); }
+.fn-6 { transform: rotateZ(75deg); }
+.fn-7 { transform: rotateZ(90deg); }
+.fn-8 { transform: rotateZ(105deg); }
+.fn-9 { transform: rotateZ(120deg); }
+.fn-10 { transform: rotateZ(135deg); }
+.fn-11 { transform: rotateZ(150deg); }
+.fn-12 { transform: rotateZ(165deg); }
+.fn-13 { transform: rotateZ(180deg); }
+.fn-14 { transform: rotateZ(195deg); }
+.fn-15 { transform: rotateZ(210deg); }
+.fn-16 { transform: rotateZ(225deg); }
+.fn-17 { transform: rotateZ(240deg); }
+.fn-18 { transform: rotateZ(255deg); }
+.fn-19 { transform: rotateZ(270deg); }
+.fn-20 { transform: rotateZ(285deg); }
+.fn-21 { transform: rotateZ(300deg); }
+.fn-22 { transform: rotateZ(315deg); }
+.fn-23 { transform: rotateZ(330deg); }
+.fn-24 { transform: rotateZ(345deg); }
+
+
+
+.text {
+    /*background: springgreen;
+*/    padding: 2em;
+    color:deeppink;
+    text-align:center;
+  /*  background-image: url("../stock/grass.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+*/
+}
+
+p {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: deeppink;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+span {
+    color: transparent;
+    text-shadow: 0 0 10px deeppink;
+    -webkit-transition: all 3s 2s ease;
+    -o-transition: all 3s 2s ease;
+    transition: all 3s 2s ease;
+}
+span:hover {
+    text-shadow: 0 0 0 deeppink;
+    -webkit-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+@-webkit-keyframes blurout {
+    from {
+        text-shadow: 0 0 10px deeppink;
+    }
+    to {
+        text-shadow: 0 0 0 deeppink;
+    }
+}
+
+@keyframes blurout {
+    from {
+        text-shadow: 0 0 10px deeppink;
+    }
+    to {
+        text-shadow: 0 0 0 deeppink;
+    }
+}

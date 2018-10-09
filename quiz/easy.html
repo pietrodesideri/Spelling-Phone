@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quiz</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+<div class="container" id="quizContainer">
+	<div class="title"> <p id="title"></p></div>
+    <div class="question"> 
+    <img src=""  class="quizimg" id="quizimg">
+
+          </div>
+<!--           <label class="option"><input type="radio" name="option" value="1"><span id="opt1"></span></label>
+ 
+ <label class="option"><input type="radio" name="option" value="2"><span id="opt2"></span></label>
+
+<label class="option"><input type="radio" name="option" value="3"><span id="opt3"></span></label>
+
+<label class="option"><input type="radio" name="option" value="4"><span id="opt4"></span></label>
+
+ -->
+<div>
+<button class="option" id="opt1"></button>
+<button class="option" id="opt2"></button>
+<button id="nextButton" class="next-btn" onclick="loadNextQuestion();"> next </button>
+
+ <p id="good"></p>
+</div>
+
+<div id="result" class="container result" style="display: none;">
+	
+</div>
+<audio class="clap"><source src="clap.mp3" type="audio/mp3"></audio>
+<audio class="haa"><source src="haa.mp3" type="audio/mp3"></audio>
+
+<script type="text/javascript" src="easy.js"></script>
+<script type="text/javascript" src="quizeasy.js"></script>
+</body>
+</html>

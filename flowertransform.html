@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Controlling CSS Animation - Play State and Random Rebuild</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="https://cdn.rawgit.com/davatron5000/Lettering.js/master/jquery.lettering.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="flower.css">
+</head>
+<body>
+ <div class="text">
+            <p class="focus">spelling phone</p>
+               </div>
+
+
+<div class="fn-container">
+    <div class="fn fn-1"></div>
+    <div class="fn fn-2"></div>
+    <div class="fn fn-3"></div>
+    <div class="fn fn-4"></div>
+    <div class="fn fn-5"></div>
+    <div class="fn fn-6"></div>
+    <div class="fn fn-7"></div>
+    <div class="fn fn-8"></div>
+    <div class="fn fn-9"></div>
+    <div class="fn fn-10"></div>
+    <div class="fn fn-11"></div>
+    <div class="fn fn-12"></div>
+    <div class="fn fn-13"></div>
+    <div class="fn fn-14"></div>
+    <div class="fn fn-15"></div>
+    <div class="fn fn-16"></div>
+    <div class="fn fn-17"></div>
+    <div class="fn fn-18"></div>
+    <div class="fn fn-19"></div>
+    <div class="fn fn-20"></div>
+    <div class="fn fn-21"></div>
+    <div class="fn fn-22"></div>
+    <div class="fn fn-23"></div>
+    <div class="fn fn-24"></div>
+</div>
+<div class="container2">
+    <button><a href="quiz.html">quiz</a></button>
+    <button><a href="abc.html">numbers</a></button>
+    <button><a href="abc.html">spelling</a></button>
+</div>
+
+        <script>
+            $(document).ready(function() {
+    $(".focus").lettering();
+    resetAnimation();
+});
+
+
+
+function resetAnimation() {
+    var myFocusText = $(".focus").text();
+
+    for (var i = 1; i <= myFocusText.length; i++) {
+        var randomNum = Math.random() * (2 - 0.5) + 0.5;
+        $(".char" + i).css({
+            animation: "blurout " + randomNum + "s ease-out infinite forwards alternate"
+        });
+    }
+    isPaused = false;
+    $(".pause").text("Pause Animation");
+}
+
+
+function playAnimation() {
+    var myFocusText = $(".focus").text();
+    for (var i = 1; i <= myFocusText.length; i++) {
+        $(".char" + i).css({ "animation-play-state": "running" });
+    }
+}
+
+
+
+        </script>
+
+</body>
+</html>
